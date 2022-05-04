@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
@@ -58,31 +57,10 @@
 
     </style>
 </noscript><meta property="og:title" content="My New Hugo Site" />
-=======
-<!doctype html>
-<html lang="zh-cn">
-  <head>
-    <title>My New Hugo Site</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.98.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="John Doe" />
-    <meta name="description" content="" />
-    <link rel="stylesheet" href="https://sethbrigg.github.io/css/main.min.4a7ec8660f9a44b08c4da97c5f2e31b1192df1d4d0322e65c0dbbc6ecb1b863f.css" />
-
-    
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My New Hugo Site"/>
-<meta name="twitter:description" content=""/>
-
-    <meta property="og:title" content="My New Hugo Site" />
->>>>>>> 0bf7403626f8036d2fb9073a9aeef93fda75def7
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://sethbrigg.github.io/" />
 
-<<<<<<< HEAD
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My New Hugo Site"/>
 <meta name="twitter:description" content=""/>
@@ -163,9 +141,13 @@
 cd e:\hugo hugo new site blog 提示：
  Congratulations! Your new Hugo site is created in E:\hugo\blog.
  创建文件夹为blog，以下内容均在blog中实现： cd .\blog\
-包括： ├── archetypes │ └── default.md #文章模板 ├── config.toml #站点配置文件 ├── content #网站内容目录 ├── data #网站数据目录，一般是json文件 ├── layouts #自定义模板目录，优先使用 ├── static #静态文件目录 └── themes #网站主题目录
 3. 选择主题 主题大卖场位于： https://themes.gohugo.io/
-本部落格选择Papermod主题（抄于老师作业ing…）...</p>
+本部落格选择Papermod主题（抄于老师作业ing…）
+git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = &#39;PaperMod&#39;
+4. 新建文章 hugo new post/article1.md
+打开 ./content/post/article1.md:
+ title: “Article1” date: 2022-05-04T15:51:33&#43;08:00 draft: true
+ 可以修改标题，如改为&#34;hugo建站-Windows&#34;...</p>
   </div>
   <footer class="entry-footer"><span title='2022-05-04 15:51:33 +0800 CST'>May 4, 2022</span></footer>
   <a class="entry-link" aria-label="post link to hugo建站-Windows" href="https://sethbrigg.github.io/post/article1/"></a>
@@ -242,47 +224,4 @@ cd e:\hugo hugo new site blog 提示：
 </script>
 </body>
 
-=======
-
-
-  </head>
-  <body>
-    <header class="app-header">
-      <a href="https://sethbrigg.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
-      <h1>My New Hugo Site</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
-    </header>
-    <main class="app-container">
-      
-  <article>
-    <h1>My New Hugo Site</h1>
-    <ul class="posts-list">
-      
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="https://sethbrigg.github.io/post/blog/">松饼的上流食用礼仪</a>
-          <span class="posts-list-item-description">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
-  <title>calendar</title>
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
-</svg>
-            May 3, 2022
-            -
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
-  <title>clock</title>
-  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-            1 min read
-          </span>
-        </li>
-      
-    </ul>
-    
-
-
-
-  </article>
-
-    </main>
-  </body>
->>>>>>> 0bf7403626f8036d2fb9073a9aeef93fda75def7
 </html>
