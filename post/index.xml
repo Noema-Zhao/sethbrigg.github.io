@@ -20,16 +20,17 @@
  环境变量中添加hugo文件路径，如：
  e:\hugo\hugo.exe
  2. 生成站点 *以下代码均在powershell中实现：
-cd e:\hugo hugo new site blog 提示：
- Congratulations! Your new Hugo site is created in E:\hugo\blog.
- 创建文件夹为blog，以下内容均在blog中实现： cd .\blog\
+cd e:\hugo hugo new site blog :bulb:: Congratulations! Your new Hugo site is created in E:\hugo\blog.
+创建文件夹为blog，以下内容均在blog中实现： cd .\blog\
 3. 选择主题 主题大卖场位于： https://themes.gohugo.io/
 本部落格选择Papermod主题（抄于老师作业ing&amp;hellip;）
 git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = &#39;PaperMod&#39;
 4. 新建文章 hugo new post/article1.md
 打开 ./content/post/article1.md:
  title: &amp;ldquo;Article1&amp;rdquo; date: 2022-05-04T15:51:33+08:00 draft: true
- 可以修改标题，如改为&amp;quot;hugo建站-Windows&amp;quot;</description>
+ 可以修改标题，如改为&amp;quot;hugo建站-Windows&amp;quot;
+写入文章（markdown格式）。
+修改字段:</description>
     </item>
     
   </channel>
