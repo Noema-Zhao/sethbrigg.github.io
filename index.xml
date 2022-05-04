@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://sethbrigg.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 03 May 2022 17:30:04 +0800</lastBuildDate><atom:link href="https://sethbrigg.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>松饼的上流食用礼仪</title>
+      <link>https://sethbrigg.github.io/post/blog/</link>
+      <pubDate>Tue, 03 May 2022 17:30:04 +0800</pubDate>
+      
+      <guid>https://sethbrigg.github.io/post/blog/</guid>
+      <description>松饼的上流食用礼仪 模式介绍 cGENIE是GENIE地球模式的简化版本，聚焦于碳循环，muffin是当前开发分支。
+下载 https://github.com/derpycode/cgenie.muffin.git
+调试捉虫 nccompare 文件树及工作流 muffin-gen生成配置文件 开跑 </description>
+    </item>
+    
+  </channel>
+</rss>
