@@ -1,371 +1,84 @@
-<!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>hugo建站-Windows | My New Hugo Site</title>
-<meta name="keywords" content="">
-<meta name="description" content="Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低，本二道贩子甚喜。
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>hugo建站-Windows | Noema の Salon</title><meta name=keywords content="log"><meta name=description content="Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低。
 以下是个人部落格在Windows上的部署过程，供参考。
 1. 安装hugo 下载网址： https://github.com/gohugoio/hugo/releases 选择：
  hugo_extended_0.98.0_Windows-64bit.zip
  环境变量中添加hugo文件路径，如：
  e:\hugo\hugo.exe
  2. 生成站点 *以下代码均在powershell中实现：
-cd e:\hugo hugo new site blog :bulb:: Congratulations! Your new Hugo site is created in E:\hugo\blog.
+cd e:\hugo hugo new site blog 💡: Congratulations! Your new Hugo site is created in E:\hugo\blog.
 创建文件夹为blog，以下内容均在blog中实现： cd .\blog\
 3. 选择主题 主题大卖场位于： https://themes.gohugo.io/
-本部落格选择Papermod主题（抄于老师作业ing&hellip;）
-git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = &#39;PaperMod&#39;
+本部落格选择Papermod主题🖊
+git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = 'PaperMod'
 4. 新建文章 hugo new post/article1.md
 打开 ./content/post/article1.md:
- title: &ldquo;Article1&rdquo; date: 2022-05-04T15:51:33&#43;08:00 draft: true
- 可以修改标题，如改为&quot;hugo建站-Windows&quot;
-写入文章（markdown格式）。
-修改字段:">
-<meta name="author" content="">
-<link rel="canonical" href="https://sethbrigg.github.io/post/article1/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.ec8da366ca2fb647537ccb7a8f6fa5b4e9cd3c7a0d3171dd2d3baad1e49c8bfc.css" integrity="sha256-7I2jZsovtkdTfMt6j2&#43;ltOnNPHoNMXHdLTuq0eSci/w=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js" integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8="
-    onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://sethbrigg.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://sethbrigg.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://sethbrigg.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://sethbrigg.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://sethbrigg.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript><meta property="og:title" content="hugo建站-Windows" />
-<meta property="og:description" content="Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低，本二道贩子甚喜。
+可以修改标题，如改为:
+ title: &ldquo;hugo建站-Windows&rdquo;
+ 写入文章（markdown格式）。
+草稿完成修改字段:
+ draft: false
+ 5."><meta name=author content="Noema"><link rel=canonical href=https://sethbrigg.github.io/post/article1/><link crossorigin=anonymous href=/assets/css/stylesheet.min.ec8da366ca2fb647537ccb7a8f6fa5b4e9cd3c7a0d3171dd2d3baad1e49c8bfc.css integrity="sha256-7I2jZsovtkdTfMt6j2+ltOnNPHoNMXHdLTuq0eSci/w=" rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://sethbrigg.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://sethbrigg.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://sethbrigg.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://sethbrigg.github.io/apple-touch-icon.png><link rel=mask-icon href=https://sethbrigg.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><script async src="https://www.googletagmanager.com/gtag/js?id=G-0GK2JSEZEC"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-0GK2JSEZEC",{anonymize_ip:!1})}</script><meta property="og:title" content="hugo建站-Windows"><meta property="og:description" content="Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低。
 以下是个人部落格在Windows上的部署过程，供参考。
 1. 安装hugo 下载网址： https://github.com/gohugoio/hugo/releases 选择：
  hugo_extended_0.98.0_Windows-64bit.zip
  环境变量中添加hugo文件路径，如：
  e:\hugo\hugo.exe
  2. 生成站点 *以下代码均在powershell中实现：
-cd e:\hugo hugo new site blog :bulb:: Congratulations! Your new Hugo site is created in E:\hugo\blog.
+cd e:\hugo hugo new site blog 💡: Congratulations! Your new Hugo site is created in E:\hugo\blog.
 创建文件夹为blog，以下内容均在blog中实现： cd .\blog\
 3. 选择主题 主题大卖场位于： https://themes.gohugo.io/
-本部落格选择Papermod主题（抄于老师作业ing&hellip;）
-git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = &#39;PaperMod&#39;
+本部落格选择Papermod主题🖊
+git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = 'PaperMod'
 4. 新建文章 hugo new post/article1.md
 打开 ./content/post/article1.md:
- title: &ldquo;Article1&rdquo; date: 2022-05-04T15:51:33&#43;08:00 draft: true
- 可以修改标题，如改为&quot;hugo建站-Windows&quot;
-写入文章（markdown格式）。
-修改字段:" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://sethbrigg.github.io/post/article1/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2022-05-04T15:51:33&#43;08:00" />
-<meta property="article:modified_time" content="2022-05-04T15:51:33&#43;08:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="hugo建站-Windows"/>
-<meta name="twitter:description" content="Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低，本二道贩子甚喜。
+可以修改标题，如改为:
+ title: &ldquo;hugo建站-Windows&rdquo;
+ 写入文章（markdown格式）。
+草稿完成修改字段:
+ draft: false
+ 5."><meta property="og:type" content="article"><meta property="og:url" content="https://sethbrigg.github.io/post/article1/"><meta property="article:section" content="post"><meta property="article:published_time" content="2022-05-04T15:51:33+08:00"><meta property="article:modified_time" content="2022-05-04T15:51:33+08:00"><meta property="og:site_name" content="Noema"><meta name=twitter:card content="summary"><meta name=twitter:title content="hugo建站-Windows"><meta name=twitter:description content="Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低。
 以下是个人部落格在Windows上的部署过程，供参考。
 1. 安装hugo 下载网址： https://github.com/gohugoio/hugo/releases 选择：
  hugo_extended_0.98.0_Windows-64bit.zip
  环境变量中添加hugo文件路径，如：
  e:\hugo\hugo.exe
  2. 生成站点 *以下代码均在powershell中实现：
-cd e:\hugo hugo new site blog :bulb:: Congratulations! Your new Hugo site is created in E:\hugo\blog.
+cd e:\hugo hugo new site blog 💡: Congratulations! Your new Hugo site is created in E:\hugo\blog.
 创建文件夹为blog，以下内容均在blog中实现： cd .\blog\
 3. 选择主题 主题大卖场位于： https://themes.gohugo.io/
-本部落格选择Papermod主题（抄于老师作业ing&hellip;）
-git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = &#39;PaperMod&#39;
+本部落格选择Papermod主题🖊
+git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = 'PaperMod'
 4. 新建文章 hugo new post/article1.md
 打开 ./content/post/article1.md:
- title: &ldquo;Article1&rdquo; date: 2022-05-04T15:51:33&#43;08:00 draft: true
- 可以修改标题，如改为&quot;hugo建站-Windows&quot;
-写入文章（markdown格式）。
-修改字段:"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://sethbrigg.github.io/post/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "hugo建站-Windows",
-      "item": "https://sethbrigg.github.io/post/article1/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "hugo建站-Windows",
-  "name": "hugo建站-Windows",
-  "description": "Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低，本二道贩子甚喜。\n以下是个人部落格在Windows上的部署过程，供参考。\n1. 安装hugo 下载网址： https://github.com/gohugoio/hugo/releases 选择：\n hugo_extended_0.98.0_Windows-64bit.zip\n 环境变量中添加hugo文件路径，如：\n e:\\hugo\\hugo.exe\n 2. 生成站点 *以下代码均在powershell中实现：\ncd e:\\hugo hugo new site blog :bulb:: Congratulations! Your new Hugo site is created in E:\\hugo\\blog.\n创建文件夹为blog，以下内容均在blog中实现： cd .\\blog\\\n3. 选择主题 主题大卖场位于： https://themes.gohugo.io/\n本部落格选择Papermod主题（抄于老师作业ing\u0026hellip;）\ngit clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = 'PaperMod'\n4. 新建文章 hugo new post/article1.md\n打开 ./content/post/article1.md:\n title: \u0026ldquo;Article1\u0026rdquo; date: 2022-05-04T15:51:33+08:00 draft: true\n 可以修改标题，如改为\u0026quot;hugo建站-Windows\u0026quot;\n写入文章（markdown格式）。\n修改字段:",
-  "keywords": [
-    
-  ],
-  "articleBody": "Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低，本二道贩子甚喜。\n以下是个人部落格在Windows上的部署过程，供参考。\n1. 安装hugo 下载网址： https://github.com/gohugoio/hugo/releases 选择：\n hugo_extended_0.98.0_Windows-64bit.zip\n 环境变量中添加hugo文件路径，如：\n e:\\hugo\\hugo.exe\n 2. 生成站点 *以下代码均在powershell中实现：\ncd e:\\hugo hugo new site blog :bulb:: Congratulations! Your new Hugo site is created in E:\\hugo\\blog.\n创建文件夹为blog，以下内容均在blog中实现： cd .\\blog\\\n3. 选择主题 主题大卖场位于： https://themes.gohugo.io/\n本部落格选择Papermod主题（抄于老师作业ing…）\ngit clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = 'PaperMod'\n4. 新建文章 hugo new post/article1.md\n打开 ./content/post/article1.md:\n title: “Article1” date: 2022-05-04T15:51:33+08:00 draft: true\n 可以修改标题，如改为\"hugo建站-Windows\"\n写入文章（markdown格式）。\n修改字段:\n draft: false\n 5. 本地调试 hugo server -t PaperMod --buildDrafts\n:bulb: : Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)\n进入1313网址，可以看到我们的第一篇小文章啦（要是发paper能有这么容易就好了（怨念…\n1313酱会实时变化，记录更新。\n6. 部署到GitHub 在GitHub上建库，名称为：[yourusername].github.io 例如我的库叫做： sethbrigg.github.io\nhugo --theme=PaperMod --baseUrl=\"https://sethbrigg.github.io/\" --buildDrafts 我们的站就被放在public路径下啦~\ncd .\\public\\ git init git add . git commit -m \"hugo 1st commit\" git remote add origin https://github.com/SethBrigg/sethbrigg.github.io.git git push -u origin master 这时其他人就可以在 https://sethbrigg.github.io/ 看到我们的blog啦~ :cherry_blossom::cherry_blossom::cherry_blossom:\n",
-  "wordCount" : "123",
-  "inLanguage": "en",
-  "datePublished": "2022-05-04T15:51:33+08:00",
-  "dateModified": "2022-05-04T15:51:33+08:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://sethbrigg.github.io/post/article1/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "My New Hugo Site",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://sethbrigg.github.io/favicon.ico"
-    }
-  }
-}
-</script>
-</head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://sethbrigg.github.io/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
-            <span class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </span>
-        </div>
-        <ul id="menu">
-        </ul>
-    </nav>
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    
-    <h1 class="post-title">
-      hugo建站-Windows
-    </h1>
-    <div class="post-meta"><span title='2022-05-04 15:51:33 +0800 CST'>May 4, 2022</span>
-
-</div>
-  </header> 
-  <div class="post-content"><p>Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低，本二道贩子甚喜。<br>
-以下是个人部落格在<strong>Windows</strong>上的部署过程，供参考。</p>
-<h2 id="1-安装hugo">1. 安装hugo<a hidden class="anchor" aria-hidden="true" href="#1-安装hugo">#</a></h2>
-<p>下载网址：
-<a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a>
-选择：</p>
-<blockquote>
-<p>hugo_extended_0.98.0_Windows-64bit.zip</p>
-</blockquote>
-<p>环境变量中添加hugo文件路径，如：</p>
-<blockquote>
-<p>e:\hugo\hugo.exe</p>
-</blockquote>
-<h2 id="2-生成站点">2. 生成站点<a hidden class="anchor" aria-hidden="true" href="#2-生成站点">#</a></h2>
-<p>*以下代码均在powershell中实现：</p>
-<pre tabindex="0"><code>cd e:\hugo
+可以修改标题，如改为:
+ title: &ldquo;hugo建站-Windows&rdquo;
+ 写入文章（markdown格式）。
+草稿完成修改字段:
+ draft: false
+ 5."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://sethbrigg.github.io/post/"},{"@type":"ListItem","position":2,"name":"hugo建站-Windows","item":"https://sethbrigg.github.io/post/article1/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"hugo建站-Windows","name":"hugo建站-Windows","description":"Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低。\n以下是个人部落格在Windows上的部署过程，供参考。\n1. 安装hugo 下载网址： https://github.com/gohugoio/hugo/releases 选择：\n hugo_extended_0.98.0_Windows-64bit.zip\n 环境变量中添加hugo文件路径，如：\n e:\\hugo\\hugo.exe\n 2. 生成站点 *以下代码均在powershell中实现：\ncd e:\\hugo hugo new site blog 💡: Congratulations! Your new Hugo site is created in E:\\hugo\\blog.\n创建文件夹为blog，以下内容均在blog中实现： cd .\\blog\\\n3. 选择主题 主题大卖场位于： https://themes.gohugo.io/\n本部落格选择Papermod主题🖊\ngit clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = 'PaperMod'\n4. 新建文章 hugo new post/article1.md\n打开 ./content/post/article1.md:\n可以修改标题，如改为:\n title: \u0026ldquo;hugo建站-Windows\u0026rdquo;\n 写入文章（markdown格式）。\n草稿完成修改字段:\n draft: false\n 5.","keywords":["log"],"articleBody":"Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低。\n以下是个人部落格在Windows上的部署过程，供参考。\n1. 安装hugo 下载网址： https://github.com/gohugoio/hugo/releases 选择：\n hugo_extended_0.98.0_Windows-64bit.zip\n 环境变量中添加hugo文件路径，如：\n e:\\hugo\\hugo.exe\n 2. 生成站点 *以下代码均在powershell中实现：\ncd e:\\hugo hugo new site blog 💡: Congratulations! Your new Hugo site is created in E:\\hugo\\blog.\n创建文件夹为blog，以下内容均在blog中实现： cd .\\blog\\\n3. 选择主题 主题大卖场位于： https://themes.gohugo.io/\n本部落格选择Papermod主题🖊\ngit clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = 'PaperMod'\n4. 新建文章 hugo new post/article1.md\n打开 ./content/post/article1.md:\n可以修改标题，如改为:\n title: “hugo建站-Windows”\n 写入文章（markdown格式）。\n草稿完成修改字段:\n draft: false\n 5. 本地调试 hugo server -D\n💡 : Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)\n进入1313网址，可以看到我们的第一篇小文章啦（要是发paper能有这么容易就好了（怨念…\n1313酱会实时变化，记录更新。\n这时可以根据主题的介绍页修改config.toml文件，完善部落格的生态系统🌳\nPaperMod介绍页\n6. 部署到GitHub 在GitHub上建库，名称为：[yourusername].github.io 例如我的库叫做： sethbrigg.github.io\nhugo --baseUrl=\"https://sethbrigg.github.io/\" --buildDrafts 我们的站就被放在public路径下啦~\ncd .\\public\\ git init git add . git commit -m \"hugo 1st commit\" git remote add origin https://github.com/SethBrigg/sethbrigg.github.io.git git push -u origin master 这时其他人就可以在 https://sethbrigg.github.io/ 看到我们的blog啦~ 🌸🌸🌸\n","wordCount":"118","inLanguage":"en","datePublished":"2022-05-04T15:51:33+08:00","dateModified":"2022-05-04T15:51:33+08:00","author":{"@type":"Person","name":"Noema"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sethbrigg.github.io/post/article1/"},"publisher":{"@type":"Organization","name":"Noema の Salon","logo":{"@type":"ImageObject","url":"https://sethbrigg.github.io/favicon.ico"}}}</script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://sethbrigg.github.io/ accesskey=h title="Noema の Salon (Alt + H)">Noema の Salon</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://sethbrigg.github.io/archives/ title=Archives><span>Archives</span></a></li><li><a href=https://sethbrigg.github.io/categories/ title=Categories><span>Categories</span></a></li><li><a href=https://sethbrigg.github.io/tags/ title=Tags><span>Tags</span></a></li><li><a href=https://sethbrigg.github.io/posts/friend-links/ title=友链><span>友链</span></a></li><li><a href=https://sethbrigg.github.io/search/ title="Search (Alt + /)" accesskey=/><span>Search</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://sethbrigg.github.io/>Home</a>&nbsp;»&nbsp;<a href=https://sethbrigg.github.io/post/>Posts</a></div><h1 class=post-title>hugo建站-Windows</h1><div class=post-meta><span title="2022-05-04 15:51:33 +0800 CST">May 4, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Noema</div></header><div class=toc><details><summary accesskey=c title="(Alt + C)"><span class=details>Table of Contents</span></summary><div class=inner><ul><li><a href=#1-%e5%ae%89%e8%a3%85hugo aria-label="1. 安装hugo">1. 安装hugo</a></li><li><a href=#2-%e7%94%9f%e6%88%90%e7%ab%99%e7%82%b9 aria-label="2. 生成站点">2. 生成站点</a></li><li><a href=#3-%e9%80%89%e6%8b%a9%e4%b8%bb%e9%a2%98 aria-label="3. 选择主题">3. 选择主题</a></li><li><a href=#4-%e6%96%b0%e5%bb%ba%e6%96%87%e7%ab%a0 aria-label="4. 新建文章">4. 新建文章</a></li><li><a href=#5-%e6%9c%ac%e5%9c%b0%e8%b0%83%e8%af%95 aria-label="5. 本地调试">5. 本地调试</a></li><li><a href=#6-%e9%83%a8%e7%bd%b2%e5%88%b0github aria-label="6. 部署到GitHub">6. 部署到GitHub</a></li></ul></div></details></div><div class=post-content><p>Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低。<br>以下是个人部落格在<strong>Windows</strong>上的部署过程，供参考。</p><h2 id=1-安装hugo>1. 安装hugo<a hidden class=anchor aria-hidden=true href=#1-安装hugo>#</a></h2><p>下载网址：
+<a href=https://github.com/gohugoio/hugo/releases>https://github.com/gohugoio/hugo/releases</a>
+选择：</p><blockquote><p>hugo_extended_0.98.0_Windows-64bit.zip</p></blockquote><p>环境变量中添加hugo文件路径，如：</p><blockquote><p>e:\hugo\hugo.exe</p></blockquote><h2 id=2-生成站点>2. 生成站点<a hidden class=anchor aria-hidden=true href=#2-生成站点>#</a></h2><p>*以下代码均在powershell中实现：</p><pre tabindex=0><code>cd e:\hugo
 hugo new site blog
-</code></pre><p>:bulb::
-<em>Congratulations! Your new Hugo site is created in E:\hugo\blog.</em></p>
-<p>创建文件夹为blog，以下内容均在blog中实现：
-<code>cd .\blog\</code></p>
-<h2 id="3-选择主题">3. 选择主题<a hidden class="anchor" aria-hidden="true" href="#3-选择主题">#</a></h2>
-<p>主题大卖场位于：
-<a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></p>
-<p>本部落格选择Papermod主题（抄于老师作业ing&hellip;）</p>
-<pre tabindex="0"><code>git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
+</code></pre><p>💡:
+<em>Congratulations! Your new Hugo site is created in E:\hugo\blog.</em></p><p>创建文件夹为blog，以下内容均在blog中实现：
+<code>cd .\blog\</code></p><h2 id=3-选择主题>3. 选择主题<a hidden class=anchor aria-hidden=true href=#3-选择主题>#</a></h2><p>主题大卖场位于：
+<a href=https://themes.gohugo.io/>https://themes.gohugo.io/</a></p><p>本部落格选择Papermod主题🖊</p><pre tabindex=0><code>git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1
 </code></pre><p>打开config.toml,添加：
-<code>theme = 'PaperMod'</code></p>
-<h2 id="4-新建文章">4. 新建文章<a hidden class="anchor" aria-hidden="true" href="#4-新建文章">#</a></h2>
-<p><code>hugo new post/article1.md</code></p>
-<p>打开 ./content/post/article1.md:</p>
-<blockquote>
-<p>title: &ldquo;Article1&rdquo;
-date: 2022-05-04T15:51:33+08:00
-draft: true</p>
-</blockquote>
-<p>可以修改标题，如改为&quot;hugo建站-Windows&quot;</p>
-<p>写入文章（markdown格式）。</p>
-<p>修改字段:</p>
-<blockquote>
-<p>draft: false</p>
-</blockquote>
-<h2 id="5-本地调试">5. 本地调试<a hidden class="anchor" aria-hidden="true" href="#5-本地调试">#</a></h2>
-<p><code>hugo server -t PaperMod --buildDrafts</code></p>
-<p>:bulb: :
-<em>Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)</em></p>
-<p>进入<a href="http://localhost:1313/">1313网址</a>，可以看到我们的第一篇小文章啦（要是发paper能有这么容易就好了（怨念&hellip;</p>
-<p>1313酱会实时变化，记录更新。</p>
-<h2 id="6-部署到github">6. 部署到GitHub<a hidden class="anchor" aria-hidden="true" href="#6-部署到github">#</a></h2>
-<p>在GitHub上建库，名称为：[yourusername].github.io
+<code>theme = 'PaperMod'</code></p><h2 id=4-新建文章>4. 新建文章<a hidden class=anchor aria-hidden=true href=#4-新建文章>#</a></h2><p><code>hugo new post/article1.md</code></p><p>打开 ./content/post/article1.md:</p><p>可以修改标题，如改为:</p><blockquote><p>title: &ldquo;hugo建站-Windows&rdquo;</p></blockquote><p>写入文章（markdown格式）。</p><p>草稿完成修改字段:</p><blockquote><p>draft: false</p></blockquote><h2 id=5-本地调试>5. 本地调试<a hidden class=anchor aria-hidden=true href=#5-本地调试>#</a></h2><p><code>hugo server -D</code></p><p>💡 :
+<em>Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)</em></p><p>进入<a href=http://localhost:1313/>1313网址</a>，可以看到我们的第一篇小文章啦（要是发paper能有这么容易就好了（怨念&mldr;</p><p>1313酱会实时变化，记录更新。</p><p>这时可以根据主题的介绍页修改config.toml文件，完善部落格的生态系统🌳</p><p><a href=https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/>PaperMod介绍页</a></p><h2 id=6-部署到github>6. 部署到GitHub<a hidden class=anchor aria-hidden=true href=#6-部署到github>#</a></h2><p>在GitHub上建库，名称为：[yourusername].github.io
 例如我的库叫做：
-sethbrigg.github.io</p>
-<pre tabindex="0"><code>hugo --theme=PaperMod --baseUrl=&#34;https://sethbrigg.github.io/&#34; --buildDrafts
-</code></pre><p>我们的站就被放在public路径下啦~</p>
-<pre tabindex="0"><code>cd .\public\
+sethbrigg.github.io</p><pre tabindex=0><code>hugo --baseUrl=&#34;https://sethbrigg.github.io/&#34; --buildDrafts
+</code></pre><p>我们的站就被放在public路径下啦~</p><pre tabindex=0><code>cd .\public\
 git init
 git add .
 git commit -m &#34;hugo 1st commit&#34;
 git remote add origin https://github.com/SethBrigg/sethbrigg.github.io.git
 git push -u origin master
-</code></pre><p>这时其他人就可以在 <a href="https://sethbrigg.github.io/">https://sethbrigg.github.io/</a> 看到我们的blog啦~
-:cherry_blossom::cherry_blossom::cherry_blossom:</p>
-
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-  </footer>
-</article>
-    </main>
-    
-<footer class="footer">
-    <span>&copy; 2022 <a href="https://sethbrigg.github.io/">My New Hugo Site</a></span>
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-</footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-</body>
-
-</html>
+</code></pre><p>这时其他人就可以在 <a href=https://sethbrigg.github.io/>https://sethbrigg.github.io/</a> 看到我们的blog啦~
+🌸🌸🌸</p></div><footer class=post-footer><ul class=post-tags><li><a href=https://sethbrigg.github.io/tags/log/>log</a></li></ul><nav class=paginav><a class=prev href=https://sethbrigg.github.io/post/article2/><span class=title>« Prev Page</span><br><span>cGENIE.muffin 工作流</span></a></nav></footer></article></main><footer class=footer><span>&copy; 2022 <a href=https://sethbrigg.github.io/>Noema の Salon</a></span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${e}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

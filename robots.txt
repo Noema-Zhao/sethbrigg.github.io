@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://sethbrigg.github.io/sitemap.xml

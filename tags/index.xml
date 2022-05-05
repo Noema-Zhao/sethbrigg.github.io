@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on My New Hugo Site</title>
+    <title>Tags on Noema の Salon</title>
     <link>https://sethbrigg.github.io/tags/</link>
-    <description>Recent content in Tags on My New Hugo Site</description>
+    <description>Recent content in Tags on Noema の Salon</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://sethbrigg.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 May 2022 15:51:33 +0800</lastBuildDate><atom:link href="https://sethbrigg.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>log</title>
+      <link>https://sethbrigg.github.io/tags/log/</link>
+      <pubDate>Wed, 04 May 2022 15:51:33 +0800</pubDate>
+      
+      <guid>https://sethbrigg.github.io/tags/log/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

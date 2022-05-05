@@ -1,36 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on Noema の Salon</title>
     <link>https://sethbrigg.github.io/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on Noema の Salon</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 04 May 2022 15:51:33 +0800</lastBuildDate><atom:link href="https://sethbrigg.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 May 2022 12:55:16 +0800</lastBuildDate><atom:link href="https://sethbrigg.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>cGENIE.muffin 工作流</title>
+      <link>https://sethbrigg.github.io/post/article2/</link>
+      <pubDate>Thu, 05 May 2022 12:55:16 +0800</pubDate>
+      
+      <guid>https://sethbrigg.github.io/post/article2/</guid>
+      <description>利用CESM输出的平衡气候态nc文件，我们可以在muffin中模拟地质时期的海洋碳循环。
+muffin-gen输出config   将 OUTPUT.RUN\T700Aice 传入genie-paleo\中。  生成config配置文件  用 OUTPUT.RUN\T700Aice 中生成的config覆盖已有config文件的muffingen部分； 修改太阳常数：  # Solar constant (W m-2) -- reduced (from 1368.0) by 0.13959% corresponding to age 15.97 Ma ma_genie_solar_constant=1366.0905 修改Mg/Ca比:  # Ocean Mg/Ca concentrations (modern defaults, mol kg-1) bg_ocn_init_35=0.013148 bg_ocn_init_50=0.041214 生成SPIN配置文件 </description>
+    </item>
+    
     <item>
       <title>hugo建站-Windows</title>
       <link>https://sethbrigg.github.io/post/article1/</link>
       <pubDate>Wed, 04 May 2022 15:51:33 +0800</pubDate>
       
       <guid>https://sethbrigg.github.io/post/article1/</guid>
-      <description>Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低，本二道贩子甚喜。
+      <description>Hugo是用 Go 语言编写的跨平台静态网站生成器，简单易用门槛低。
 以下是个人部落格在Windows上的部署过程，供参考。
 1. 安装hugo 下载网址： https://github.com/gohugoio/hugo/releases 选择：
  hugo_extended_0.98.0_Windows-64bit.zip
  环境变量中添加hugo文件路径，如：
  e:\hugo\hugo.exe
  2. 生成站点 *以下代码均在powershell中实现：
-cd e:\hugo hugo new site blog :bulb:: Congratulations! Your new Hugo site is created in E:\hugo\blog.
+cd e:\hugo hugo new site blog 💡: Congratulations! Your new Hugo site is created in E:\hugo\blog.
 创建文件夹为blog，以下内容均在blog中实现： cd .\blog\
 3. 选择主题 主题大卖场位于： https://themes.gohugo.io/
-本部落格选择Papermod主题（抄于老师作业ing&amp;hellip;）
+本部落格选择Papermod主题🖊
 git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 打开config.toml,添加： theme = &#39;PaperMod&#39;
 4. 新建文章 hugo new post/article1.md
 打开 ./content/post/article1.md:
- title: &amp;ldquo;Article1&amp;rdquo; date: 2022-05-04T15:51:33+08:00 draft: true
- 可以修改标题，如改为&amp;quot;hugo建站-Windows&amp;quot;
-写入文章（markdown格式）。
-修改字段:</description>
+可以修改标题，如改为:
+ title: &amp;ldquo;hugo建站-Windows&amp;rdquo;
+ 写入文章（markdown格式）。
+草稿完成修改字段:
+ draft: false
+ 5.</description>
     </item>
     
   </channel>
